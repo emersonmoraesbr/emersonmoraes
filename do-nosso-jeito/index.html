@@ -1,1 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emerson Moraes • Do Nosso Jeito</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#1b2430;
+      --gold:#f1c97a;
+      --muted:#d6cbbd;
+      --card:#243041;
+      --btn:#2d3f57;
+      --btnHover:#3a5273;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:'Montserrat',sans-serif;
+      background:radial-gradient(
+        1200px 600px at 50% 20%,
+        #3a4a66 0%,
+        var(--bg) 65%
+      );
+      color:#fff;
+    }
+
+    .wrap{
+      max-width:720px;
+      margin:0 auto;
+      padding:24px;
+      text-align:center;
+    }
+
+    .cover{
+      margin:24px auto 16px;
+      max-width:260px;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 25px 70px rgba(0,0,0,.55);
+    }
+
+    .cover img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    h2{
+      margin:8px 0 14px;
+      font-weight:300;
+      font-size:24px;
+      letter-spacing:.6px;
+      color:var(--gold);
+    }
+
+    p{
+      margin:0 auto 24px;
+      max-width:580px;
+      color:var(--muted);
+      line-height:1.7;
+      font-size:15px;
+    }
+
+    .btns{
+      display:grid;
+      gap:12px;
+      margin:10px 0 30px;
+    }
+
+    .btn{
+      padding:16px 18px;
+      background:var(--btn);
+      border-radius:12px;
+      text-decoration:none;
+      color:#fff;
+      font-weight:500;
+      transition:.25s ease;
+      border:1px solid rgba(255,255,255,.12);
+    }
+
+    .btn:hover{
+      background:var(--btnHover);
+      transform:translateY(-1px);
+    }
+
+    footer{
+      opacity:.75;
+      font-size:12px;
+      padding-bottom:10px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <div class="cover">
+      <img src="EmersonMoraes_DoNossoJeito.jpg" alt="Capa do single Do Nosso Jeito">
+    </div>
+
+    <h2>Do Nosso Jeito</h2>
+
+    <p>
+      Alguns amores não precisam de explicação.  
+      Só de uma canção.
+    </p>
+
+    <section class="btns">
+      <a class="btn" href="#" target="_blank">Ouvir no Spotify</a>
+      <a class="btn" href="#" target="_blank">Ouvir no Deezer</a>
+      <a class="btn" href="#" target="_blank">Ouvir no Apple Music</a>
+      <a class="btn" href="#" target="_blank">Ouvir no YouTube</a>
+    </section>
+
+    <footer>
+      © Emerson Moraes — Produção independente
+    </footer>
+
+  </main>
+</body>
+</html>
 
