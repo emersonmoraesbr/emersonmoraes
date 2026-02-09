@@ -3,119 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Emerson Moraes • Lançamentos</title>
+  <title>Emerson Moraes • Site Oficial</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
   <style>
     :root{
-      --bg:#0f1a16;
-      --gold:#c9b26d;
-      --muted:#aab3ad;
-      --card:#16231e;
-      --btn:#1f352d;
-      --btnHover:#2a4a3e;
+      --bg:#101826;
+      --bg2:#0b1220;
+      --gold:#f1c97a;
+      --muted:#c9c6bf;
+      --card:#162033;
+      --stroke:rgba(255,255,255,.10);
     }
     *{box-sizing:border-box}
     body{
       margin:0;
       font-family:'Montserrat',sans-serif;
-      background:radial-gradient(1200px 600px at 50% 20%, #1c2f28 0%, var(--bg) 60%);
       color:#fff;
+      background:radial-gradient(1200px 600px at 50% 0%, #22334f 0%, var(--bg) 55%, var(--bg2) 100%);
     }
     .wrap{
-      max-width:720px;
+      max-width:980px;
       margin:0 auto;
-      padding:24px;
+      padding:28px 18px 24px;
       text-align:center;
     }
-    .cover{
-      margin:32px auto 16px;
-      max-width:260px;
-      border-radius:16px;
-      overflow:hidden;
-      box-shadow:0 20px 60px rgba(0,0,0,.45);
+    header{
+      padding:10px 0 18px;
     }
-    .cover img{
-      width:100%;
-      height:auto;
-      display:block;
+    h1{
+      margin:0;
+      font-size:30px;
+      letter-spacing:.6px;
+      font-weight:700;
     }
-    h2{
-      margin:6px 0 12px;
-      font-weight:300;
-      color:var(--gold);
-      font-size:22px;
-    }
-    p{
-      margin:0 auto 22px;
-      max-width:580px;
+    h1 span{ color:var(--gold); }
+    p.lead{
+      margin:10px auto 0;
+      max-width:720px;
       color:var(--muted);
-      line-height:1.6;
+      line-height:1.7;
       font-size:15px;
+      font-weight:300;
     }
-    .btns{
+    .grid{
+      margin:26px auto 10px;
       display:grid;
-      gap:12px;
-      margin:10px 0 36px;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:18px;
+      align-items:stretch;
     }
-    .btn{
-      padding:16px 18px;
-      background:var(--btn);
-      border-radius:12px;
+    @media (max-width:720px){
+      .grid{ grid-template-columns:1fr; }
+    }
+    a.card{
+      display:block;
       text-decoration:none;
-      color:#fff;
-      font-weight:500;
-      transition:.2s ease;
-      border:1px solid rgba(255,255,255,.08);
+      color:inherit;
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 18px 50px rgba(0,0,0,.35);
+      transition:.25s ease;
+      text-align:left;
     }
-    .btn:hover{background:var(--btnHover)}
-    footer{
-      opacity:.7;
+    a.card:hover{
+      transform:translateY(-2px);
+      border-color:rgba(241,201,122,.35);
+      box-shadow:0 22px 70px rgba(0,0,0,.45);
+    }
+    .cover{
+      aspect-ratio:1/1; /* capa quadrada */
+      width:100%;
+      display:block;
+      object-fit:cover;
+      background:#0a0f18;
+    }
+    .meta{
+      padding:14px 14px 16px;
+    }
+    .title{
+      margin:0;
+      font-size:18px;
+      font-weight:700;
+      letter-spacing:.4px;
+    }
+    .subtitle{
+      margin:6px 0 0;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.5;
+      font-weight:300;
+    }
+    .pill{
+      display:inline-block;
+      margin-top:10px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--stroke);
       font-size:12px;
-      padding-bottom:10px;
+      color:#fff;
+      background:rgba(45,63,87,.25);
+    }
+    footer{
+      margin-top:18px;
+      opacity:.75;
+      font-size:12px;
+      color:var(--muted);
     }
   </style>
 </head>
 
 <body>
   <main class="wrap">
+    <header>
+      <h1><span>Emerson</span> Moraes</h1>
+      <p class="lead">
+        Bem-vindo ao meu site oficial. Aqui você encontra meus lançamentos e acessa cada single com links diretos
+        para as plataformas.
+      </p>
+    </header>
 
-    <!-- 🔹 SEÇÃO: DO NOSSO JEITO -->
-    <div class="cover">
-      <img src="DoNossoJeito.png" alt="Capa do single Do Nosso Jeito">
-    </div>
+    <section class="grid">
+      <!-- Card: Meu Grande Amor -->
+      <a class="card" href="./meu-grande-amor/" aria-label="Abrir página do single Meu Grande Amor">
+        <img class="cover" src="./assets/meu-grande-amor.jpg" alt="Capa do single Meu Grande Amor">
+        <div class="meta">
+          <p class="title">Meu Grande Amor</p>
+          <p class="subtitle">Single • Links para Spotify, Deezer, Apple Music e YouTube</p>
+          <span class="pill">Abrir página do single →</span>
+        </div>
+      </a>
 
-    <h2>Do Nosso Jeito – Emerson Moraes</h2>
-
-    <p>
-      Alguns amores não precisam de explicação.
-      Só de uma canção.
-    </p>
-
-    <section class="btns">
-      <a class="btn" href="#" target="_blank">Ouvir no Spotify</a>
-      <a class="btn" href="#" target="_blank">Ouvir no Deezer</a>
-      <a class="btn" href="#" target="_blank">Ouvir no Apple Music</a>
-      <a class="btn" href="#" target="_blank">Ouvir no YouTube</a>
-    </section>
-
-    <!-- 🔹 SEÇÃO: MEU GRANDE AMOR -->
-    <div class="cover">
-      <img src="EmersonMoraesDisponivel.png" alt="Capa do lançamento Meu Grande Amor">
-    </div>
-
-    <h2>Meu Grande Amor</h2>
-
-    <p>
-      Música autoral, produzida de forma independente.
-      Uma história real transformada em som.
-      Já disponível nas principais plataformas de streaming.
-    </p>
-
-    <section class="btns">
-      <a class="btn" href="https://open.spotify.com/intl-pt/album/5nqEYiVuPJf6mYp9H5uqPb?si=lOpy5wTQRz-5p2_WA6RIPw" target="_blank">Ouvir no Spotify</a>
-      <a class="btn" href="https://link.deezer.com/s/327YM9XAGCofOwdxJ6c5O" target="_blank">Ouvir no Deezer</a>
-      <a class="btn" href="https://music.apple.com/br/album/meu-grande-amor-single/1862869097" target="_blank">Ouvir no Apple Music</a>
-      <a class="btn" href="https://music.youtube.com/watch?v=mljhM9efieg&si=-3dbnBMDPRnHYOIE" target="_blank">Ouvir no YouTube</a>
+      <!-- Card: Do Nosso Jeito -->
+      <a class="card" href="./do-nosso-jeito/" aria-label="Abrir página do single Do Nosso Jeito">
+        <img class="cover" src="./assets/do-nosso-jeito.jpg" alt="Capa do single Do Nosso Jeito">
+        <div class="meta">
+          <p class="title">Do Nosso Jeito</p>
+          <p class="subtitle">Single • Links para Spotify, Deezer, Apple Music e YouTube</p>
+          <span class="pill">Abrir página do single →</span>
+        </div>
+      </a>
     </section>
 
     <footer>
