@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Emerson Moraes • Do Nosso Jeito</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root{
       --bg:#1b2430;
       --gold:#f1c97a;
       --muted:#d6cbbd;
-      --card:#243041;
       --btn:#2d3f57;
       --btnHover:#3a5273;
     }
 
-    *{box-sizing:border-box}
+    *{
+      box-sizing:border-box;
+    }
 
     body{
       margin:0;
@@ -30,11 +35,13 @@
       color:#fff;
     }
 
-    .wrap{
+    main.wrap{
       max-width:720px;
       margin:0 auto;
       padding:24px;
       text-align:center;
+      position:relative;
+      z-index:1;
     }
 
     .cover{
@@ -52,7 +59,7 @@
     }
 
     h2{
-      margin:8px 0 14px;
+      margin:10px 0 14px;
       font-weight:300;
       font-size:24px;
       letter-spacing:.6px;
@@ -71,6 +78,8 @@
       display:grid;
       gap:12px;
       margin:10px 0 30px;
+      position:relative;
+      z-index:10; /* garante clique nos botões */
     }
 
     .btn{
@@ -82,6 +91,7 @@
       font-weight:500;
       transition:.25s ease;
       border:1px solid rgba(255,255,255,.12);
+      display:block;
     }
 
     .btn:hover{
@@ -99,24 +109,59 @@
 </head>
 
 <body>
+
   <main class="wrap">
 
     <div class="cover">
-      <img src="EmersonMoraes_DoNossoJeito.jpg" alt="Capa do single Do Nosso Jeito">
+      <img
+        src="EmersonMoraes_DoNossoJeito.jpg"
+        alt="Capa do single Do Nosso Jeito"
+      >
     </div>
 
     <h2>Do Nosso Jeito</h2>
 
     <p>
-      Alguns amores não precisam de explicação.  
+      Alguns amores não precisam de explicação.<br>
       Só de uma canção.
     </p>
 
     <section class="btns">
-      <a class="btn" href="https://open.spotify.com/intl-pt/album/7gdPieUxIuLol2zILSrueY?si=fAcP4FljT5KjquKopPkHFA" target="_blank">Ouvir no Spotify</a>
-      <a class="btn" href="#" target="_blank">Ouvir no Deezer</a>
-      <a class="btn" href="#" target="_blank">Ouvir no Apple Music</a>
-      <a class="btn" href="#" target="_blank">Ouvir no YouTube</a>
+      <a
+        class="btn"
+        href="https://open.spotify.com/intl-pt/album/7gdPieUxIuLol2zILSrueY?si=fAcP4FljT5KjquKopPkHFA"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ouvir no Spotify
+      </a>
+
+      <a
+        class="btn"
+        href="https://link.deezer.com/s/32oOubnUQcu4T3AEVL93b"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ouvir no Deezer
+      </a>
+
+      <a
+        class="btn"
+        href="https://music.apple.com/br/song/do-nosso-jeito/1870646533?l=en-GB"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ouvir no Apple Music
+      </a>
+
+      <a
+        class="btn"
+        href="https://music.youtube.com/playlist?list=OLAK5uy_lExIO2tNFVJUl3B68HbaIM3cAvMiEN5BA&si=FCYgoUUiWLome7nv"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ouvir no YouTube
+      </a>
     </section>
 
     <footer>
@@ -124,6 +169,6 @@
     </footer>
 
   </main>
+
 </body>
 </html>
-
