@@ -13,7 +13,6 @@
       --bg2:#0b1220;
       --gold:#f1c97a;
       --muted:#c9c6bf;
-      --card:#162033;
       --stroke:rgba(255,255,255,.10);
     }
     *{box-sizing:border-box}
@@ -28,9 +27,6 @@
       margin:0 auto;
       padding:28px 18px 24px;
       text-align:center;
-    }
-    header{
-      padding:10px 0 18px;
     }
     h1{
       margin:0;
@@ -75,15 +71,13 @@
       box-shadow:0 22px 70px rgba(0,0,0,.45);
     }
     .cover{
-      aspect-ratio:1/1; /* capa quadrada */
+      aspect-ratio:1/1;
       width:100%;
       display:block;
       object-fit:cover;
       background:#0a0f18;
     }
-    .meta{
-      padding:14px 14px 16px;
-    }
+    .meta{ padding:14px 14px 16px; }
     .title{
       margin:0;
       font-size:18px;
@@ -104,7 +98,6 @@
       border-radius:999px;
       border:1px solid var(--stroke);
       font-size:12px;
-      color:#fff;
       background:rgba(45,63,87,.25);
     }
     footer{
@@ -121,13 +114,11 @@
     <header>
       <h1><span>Emerson</span> Moraes</h1>
       <p class="lead">
-        Bem-vindo ao meu site oficial. Aqui você encontra meus lançamentos e acessa cada single com links diretos
-        para as plataformas.
+        Meus lançamentos — clique em um single para abrir a página com os links das plataformas.
       </p>
     </header>
 
     <section class="grid">
-      <!-- Card: Meu Grande Amor -->
       <a class="card" href="./meu-grande-amor/" aria-label="Abrir página do single Meu Grande Amor">
         <img class="cover" src="./EmersonMoraesDisponivel.png" alt="Capa do single Meu Grande Amor">
         <div class="meta">
@@ -137,9 +128,8 @@
         </div>
       </a>
 
-      <!-- Card: Do Nosso Jeito -->
       <a class="card" href="./do-nosso-jeito/" aria-label="Abrir página do single Do Nosso Jeito">
-        <img class="cover" src="./EmersonMoraes_DoNossoJeito.jpg" alt="Capa do single Do Nosso Jeito">
+        <img class="cover" src="./DoNossoJeito.jpg" alt="Capa do single Do Nosso Jeito">
         <div class="meta">
           <p class="title">Do Nosso Jeito</p>
           <p class="subtitle">Single • Links para Spotify, Deezer, Apple Music e YouTube</p>
@@ -148,15 +138,7 @@
       </a>
     </section>
 
-    <footer>
-      © Emerson Moraes — Produção independente
-    </footer>
+    <footer>© Emerson Moraes — Produção independente</footer>
   </main>
 </body>
 </html>
-
-
-
-
-
-
