@@ -7,11 +7,11 @@
 /* 1) STREAMING — cole cada URL quando estiver disponível.
       Enquanto estiver vazio, o botão fica desativado (não inventa link). */
 var streamingLinks = {
-spotify: "",       // TODO: link do Spotify de "Eu Volto"
-deezer: "",        // TODO: link do Deezer
-appleMusic: "",    // TODO: link do Apple Music
-youtubeMusic: "",  // TODO: link do YouTube Music
-amazonMusic: ""    // TODO: link do Amazon Music
+spotify: "https://open.spotify.com/intl-pt/track/7a53b1eHcE1MMqrFYLT83Z?si=b4ee8813aadb4d1c",
+deezer: "https://link.deezer.com/s/34oxBmXGD10fuGjcfpq5s",
+appleMusic: "https://music.apple.com/us/song/eu-volto/6808007850",
+youtubeMusic: "https://music.youtube.com/watch?v=xLiKw1wjYl8&si=WvRJM352_WExWYmZ",
+amazonMusic: "https://music.amazon.com/tracks/B0HHL48XVH?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_P4vsETKZuJrmaGfnIZI4cRBXW"
 };
 
 /* 2) YOUTUBE — três destinos diferentes, não misturar. */
