@@ -106,7 +106,53 @@
       font-size:12px;
       color:var(--muted);
     }
-  </style>
+  
+a.card.featured{ grid-column:1 / -1; }
+.featured-banner{
+position:relative;
+aspect-ratio:16/6;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+radial-gradient(120% 140% at 50% 125%, rgba(241,201,122,.42) 0%, rgba(217,139,58,.26) 32%, rgba(11,10,9,0) 68%),
+linear-gradient(180deg,#0b0a09 0%,#1d1710 55%,#2a1e13 100%);
+}
+.featured-title{
+display:block;
+font-size:38px;
+font-weight:700;
+letter-spacing:-.5px;
+color:var(--gold);
+line-height:1;
+}
+.featured-sub{
+display:block;
+margin-top:8px;
+font-size:12px;
+font-weight:300;
+letter-spacing:.28em;
+text-transform:uppercase;
+color:#fff;
+}
+.badge-new{
+position:absolute;
+top:12px;
+left:14px;
+font-size:11px;
+font-weight:700;
+letter-spacing:.16em;
+color:#0b0a09;
+background:var(--gold);
+padding:5px 10px;
+border-radius:999px;
+}
+@media (max-width:720px){
+.featured-banner{ aspect-ratio:16/9; }
+.featured-title{ font-size:28px; }
+}
+</style>
 </head>
 
 <body>
@@ -119,6 +165,21 @@
     </header>
 
     <section class="grid">
+<a class="card featured" href="./eu-volto/" aria-label="Abrir página do lançamento Eu Volto">
+<div class="featured-banner">
+<span class="badge-new">NOVO</span>
+<div>
+<span class="featured-title">Eu Volto</span>
+<span class="featured-sub">Só Pra Agradecer</span>
+</div>
+</div>
+<div class="meta">
+<p class="title">Eu Volto</p>
+<p class="subtitle">Single &bull; Já disponível no Spotify, Deezer, Apple Music, YouTube Music e Amazon Music</p>
+<span class="pill">Abrir página do lançamento &rarr;</span>
+</div>
+</a>
+
       <a class="card" href="./meu-grande-amor/" aria-label="Abrir página do single Meu Grande Amor">
         <img class="cover" src="./EmersonMoraesDisponivel.png" alt="Capa do single Meu Grande Amor">
         <div class="meta">
