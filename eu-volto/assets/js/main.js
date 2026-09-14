@@ -148,10 +148,10 @@ for (var s = 0; s < sections.length; s++) obs.observe(sections[s]);
 function setupReveal() {
 var items = document.querySelectorAll(".reveal");
 var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-if (reduced || !("IntersectionObserver" in window)) {
-for (var i = 0; i < items.length; i++) items[i].classList.add("in");
-return;
-}
+// Sem observer ou com movimento reduzido, o conteudo fica visivel do jeito que ja esta no CSS.
+if (reduced || !("IntersectionObserver" in window)) return;
+// So a partir daqui o CSS pode esconder para animar: se este JS falhar, nada some.
+document.documentElement.classList.add("js-reveal");
 var obs = new IntersectionObserver(function (entries) {
 for (var j = 0; j < entries.length; j++) {
 if (entries[j].isIntersecting) {
