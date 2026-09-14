@@ -107,16 +107,44 @@ background:linear-gradient(180deg,#0b0a09 0%,#171310 45%,#241a12 78%,#0b0a09 100
 }
 /* A arte entra desfocada: vira atmosfera, nao concorre com o titulo. */
 .hero-sky::before{
-content:"";position:absolute;inset:-60px;
-background:url("../../Capa_Eu_Volto_Emerson_Moraes_3000x3000_RGB.jpg") center 62%/cover no-repeat;
-filter:blur(38px) saturate(125%);
-opacity:.62;
+content:"";position:absolute;inset:0;
+background:url("../../Inicio.png") center 45%/cover no-repeat;
 }
 .hero-sky::after{
 content:"";position:absolute;inset:0;
 background:
-radial-gradient(120% 85% at 50% 95%, rgba(241,201,122,.20) 0%, rgba(11,10,9,0) 62%),
-linear-gradient(180deg, rgba(11,10,9,.80) 0%, rgba(11,10,9,.55) 42%, rgba(11,10,9,.92) 100%);
+linear-gradient(90deg, rgba(11,10,9,.90) 0%, rgba(11,10,9,.62) 42%, rgba(11,10,9,.55) 70%, rgba(11,10,9,.82) 100%),
+linear-gradient(180deg, rgba(11,10,9,.55) 0%, rgba(11,10,9,.10) 30%, rgba(11,10,9,.70) 82%, #0b0a09 100%);
+}
+
+/* Fundos das seções — a imagem entra por tras de um veu escuro para o texto continuar legivel. */
+#ouca{
+background:
+linear-gradient(180deg, rgba(11,10,9,.90) 0%, rgba(11,10,9,.76) 45%, rgba(11,10,9,.95) 100%),
+url("../../AssistaAgora.png") center/cover no-repeat,
+var(--black);
+}
+#sobre-musica{
+background:
+linear-gradient(180deg, rgba(11,10,9,.92) 0%, rgba(11,10,9,.78) 50%, rgba(11,10,9,.94) 100%),
+url("../../sobreamusica.png") center/cover no-repeat,
+var(--black);
+}
+#artista{
+background:
+linear-gradient(180deg, rgba(20,18,16,.93) 0%, rgba(20,18,16,.80) 50%, rgba(20,18,16,.95) 100%),
+url("../../oartista.png") center/cover no-repeat,
+var(--graphite);
+}
+
+/* Mockup da edicao fisica */
+.phys-art{
+width:100%;
+height:auto;
+border-radius:14px;
+border:1px solid var(--stroke);
+box-shadow:var(--shadow);
+margin-bottom:28px;
 }
 .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding-top:96px;padding-bottom:96px}
 
