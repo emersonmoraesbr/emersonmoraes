@@ -120,10 +120,14 @@ linear-gradient(180deg, rgba(11,10,9,.55) 0%, rgba(11,10,9,.10) 30%, rgba(11,10,
 /* Fundos das seções — a imagem entra por tras de um veu escuro para o texto continuar legivel. */
 #ouca{
 background:
-linear-gradient(180deg, rgba(11,10,9,.90) 0%, rgba(11,10,9,.76) 45%, rgba(11,10,9,.95) 100%),
+linear-gradient(180deg, rgba(11,10,9,.72) 0%, rgba(11,10,9,.48) 40%, rgba(11,10,9,.86) 100%),
 url("../../AssistaAgora.png") center/cover no-repeat,
 var(--black);
+background-attachment:scroll;
 }
+/* Os cartoes ganham fundo proprio para nao sumirem sobre a foto. */
+#ouca .stream{background:rgba(20,18,16,.82);backdrop-filter:blur(4px)}
+#ouca .stream:hover{background:rgba(35,31,26,.92)}
 #sobre-musica{
 background:
 linear-gradient(180deg, rgba(11,10,9,.92) 0%, rgba(11,10,9,.78) 50%, rgba(11,10,9,.94) 100%),
