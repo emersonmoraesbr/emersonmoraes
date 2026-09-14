@@ -104,8 +104,9 @@ border-bottom:1px solid var(--stroke);
 .hero-sky{
 position:absolute;inset:0;
 background:
-radial-gradient(120% 80% at 50% 92%, rgba(241,201,122,.30) 0%, rgba(217,139,58,.20) 26%, rgba(11,10,9,0) 62%),
-radial-gradient(90% 60% at 50% 100%, rgba(217,139,58,.34) 0%, rgba(11,10,9,0) 60%),
+radial-gradient(120% 80% at 50% 92%, rgba(241,201,122,.22) 0%, rgba(217,139,58,.16) 26%, rgba(11,10,9,0) 62%),
+linear-gradient(180deg, rgba(11,10,9,.90) 0%, rgba(11,10,9,.74) 45%, rgba(11,10,9,.88) 100%),
+url("../../Capa_Eu_Volto_Emerson_Moraes_3000x3000_RGB.jpg") center 35%/cover no-repeat,
 linear-gradient(180deg,#0b0a09 0%,#171310 45%,#241a12 78%,#0b0a09 100%);
 }
 .hero-sky::after{
@@ -282,11 +283,12 @@ margin-bottom:22px;
 }
 
 /* ---------- reveal ---------- */
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
+.reveal{opacity:1;transform:none}
+.js-reveal .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.js-reveal .reveal.in{opacity:1;transform:none}
 
 @media (prefers-reduced-motion:reduce){
 html{scroll-behavior:auto}
-.reveal{opacity:1;transform:none;transition:none}
+.reveal,.js-reveal .reveal{opacity:1;transform:none;transition:none}
 *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
 }
