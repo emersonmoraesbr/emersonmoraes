@@ -107,35 +107,7 @@
       color:var(--muted);
     }
   
-a.card.featured{ grid-column:1 / -1; }
-.featured-banner{
-position:relative;
-aspect-ratio:16/6;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-radial-gradient(120% 140% at 50% 125%, rgba(241,201,122,.42) 0%, rgba(217,139,58,.26) 32%, rgba(11,10,9,0) 68%),
-linear-gradient(180deg,#0b0a09 0%,#1d1710 55%,#2a1e13 100%);
-}
-.featured-title{
-display:block;
-font-size:38px;
-font-weight:700;
-letter-spacing:-.5px;
-color:var(--gold);
-line-height:1;
-}
-.featured-sub{
-display:block;
-margin-top:8px;
-font-size:12px;
-font-weight:300;
-letter-spacing:.28em;
-text-transform:uppercase;
-color:#fff;
-}
+.cover-wrap{ position:relative; }
 .badge-new{
 position:absolute;
 top:12px;
@@ -147,10 +119,6 @@ color:#0b0a09;
 background:var(--gold);
 padding:5px 10px;
 border-radius:999px;
-}
-@media (max-width:720px){
-.featured-banner{ aspect-ratio:16/9; }
-.featured-title{ font-size:28px; }
 }
 </style>
 </head>
@@ -165,13 +133,10 @@ border-radius:999px;
     </header>
 
     <section class="grid">
-<a class="card featured" href="./eu-volto/" aria-label="Abrir página do lançamento Eu Volto">
-<div class="featured-banner">
+<a class="card" href="./eu-volto/" aria-label="Abrir página do lançamento Eu Volto">
+<div class="cover-wrap">
 <span class="badge-new">NOVO</span>
-<div>
-<span class="featured-title">Eu Volto</span>
-<span class="featured-sub">Só Pra Agradecer</span>
-</div>
+<img class="cover" src="./eu-volto/Capa_Eu_Volto_Emerson_Moraes_3000x3000_RGB.jpg" alt="Capa do single Eu Volto — Só Pra Agradecer" loading="lazy" width="600" height="600">
 </div>
 <div class="meta">
 <p class="title">Eu Volto</p>
